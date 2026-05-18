@@ -49,8 +49,8 @@ img{display:block}
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 4rem;height:80px;background:rgba(14,12,10,0.95);backdrop-filter:blur(12px);border-bottom:.5px solid var(--border)}
 .nav-brand{display:flex;align-items:center;gap:1.2rem}
-.nav-brand-photo{width:42px;height:42px;border-radius:50%;overflow:hidden;border:1px solid var(--border-strong);flex-shrink:0}
-.nav-brand-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.nav-brand-logo{width:52px;height:52px;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:4px}
+.nav-brand-logo img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 1px 2px rgba(0,0,0,.4))}
 .nav-brand-text{display:flex;flex-direction:column;gap:1px}
 .nav-brand-name{font-family:"Cormorant Garamond",serif;font-size:19px;font-weight:600;line-height:1;color:var(--text-primary)}
 .nav-brand-role{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
@@ -320,15 +320,15 @@ footer{background:var(--bg-mid);border-top:.5px solid var(--border);padding:3rem
 
 <!-- ── NAV ── -->
 <nav>
-  <div class="nav-brand">
-    <div class="nav-brand-photo">
-      <img src="images/rajkishor-mishra.jpeg" alt="Rajkishor Mishra"/>
+  <a class="nav-brand" href="https://omshantinrconstruction.com" target="_blank" rel="noopener" aria-label="Om Shanti N R Construction">
+    <div class="nav-brand-logo">
+      <img src="images/omnr-logo.png" alt="Om Shanti N R Construction"/>
     </div>
     <div class="nav-brand-text">
       <div class="nav-brand-name">Rajkishor Mishra</div>
       <div class="nav-brand-role">Founding Partner · Om Shanti N R Construction</div>
     </div>
-  </div>
+  </a>
   <a class="nav-back" href="https://omshantinrconstruction.com" target="_blank" rel="noopener">
     <span class="nav-back-arrow">←</span>
     <span>omshantinrconstruction.com</span>
