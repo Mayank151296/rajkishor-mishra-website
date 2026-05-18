@@ -259,6 +259,19 @@ footer{background:var(--bg-mid);border-top:.5px solid var(--border);padding:3rem
 .wa-fab{position:fixed;bottom:2rem;right:2rem;z-index:200;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.3);cursor:pointer;transition:transform .2s;text-decoration:none}
 .wa-fab:hover{transform:scale(1.08)}
 
+/* ── HERO CTA BLOCK ── */
+.hero-cta-block{margin-top:2.4rem;padding:1.6rem 2rem;background:rgba(200,169,110,.05);border:.5px solid var(--border-strong);position:relative}
+.hero-cta-block::before{content:"";position:absolute;top:-1px;left:-1px;width:32px;height:32px;border-top:2px solid var(--gold);border-left:2px solid var(--gold)}
+.hero-cta-block::after{content:"";position:absolute;bottom:-1px;right:-1px;width:32px;height:32px;border-bottom:2px solid var(--gold);border-right:2px solid var(--gold)}
+.hero-cta-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;display:flex;align-items:center;gap:10px}
+.hero-cta-label::before{content:"";width:20px;height:1px;background:var(--gold)}
+.hero-cta-heading{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600;color:var(--text-primary);margin-bottom:.5rem;line-height:1.15}
+.hero-cta-heading em{color:var(--gold);font-style:italic}
+.hero-cta-sub{font-size:13px;color:var(--text-muted);font-weight:300;line-height:1.75;margin-bottom:1.2rem;max-width:440px}
+.hero-cta-actions{display:flex;gap:.7rem;flex-wrap:wrap}
+.hero-cta-actions .btn-primary{padding:10px 20px;font-size:10px}
+.hero-cta-actions .btn-outline{padding:10px 20px;font-size:10px}
+
 /* ── SCROLL REVEAL ── */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
@@ -352,6 +365,16 @@ footer{background:var(--bg-mid);border-top:.5px solid var(--border);padding:3rem
       <div>
         <div class="hero-stat-num">500+</div>
         <div class="hero-stat-label">Families Housed</div>
+      </div>
+    </div>
+
+    <div class="hero-cta-block">
+      <div class="hero-cta-label">Om Shanti N R Construction</div>
+      <div class="hero-cta-heading">Explore Our Full <em>Portfolio</em></div>
+      <p class="hero-cta-sub">Discover all ongoing and completed projects &mdash; floor plans, configurations, RERA details, and the complete story of building Palghar&rsquo;s homes since 2005.</p>
+      <div class="hero-cta-actions">
+        <a class="btn-primary" href="https://omshantinrconstruction.com" target="_blank" rel="noopener">Visit omshantinrconstruction.com &#8599;</a>
+        <a class="btn-outline" href="https://omshantinrconstruction.com/#/projects/ostwal" target="_blank" rel="noopener">View Ostwal Imperial &rarr;</a>
       </div>
     </div>
   </div>
