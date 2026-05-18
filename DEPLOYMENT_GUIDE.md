@@ -1,4 +1,4 @@
-# rajkishormishra.in — Deployment Guide
+# rajkishormishra.com — Deployment Guide
 ## GitHub + Cloudflare Pages + GoDaddy DNS
 
 ---
@@ -15,7 +15,7 @@ Then open **Terminal** on your Mac:
 cd /Users/mayankjoshi/Desktop/rajkishor_mishra_website
 git init
 git add .
-git commit -m "Initial commit — rajkishormishra.in"
+git commit -m "Initial commit — rajkishormishra.com"
 git branch -M main
 git remote add origin https://github.com/Mayank151296/rajkishor-mishra-website.git
 git push -u origin main
@@ -46,8 +46,8 @@ git push -u origin main
 
 1. In Cloudflare, go to your Pages project → **Custom domains** tab
 2. Click **Set up a custom domain**
-3. Enter: `rajkishormishra.in` → Click **Continue**
-4. Also add: `www.rajkishormishra.in` → Click **Continue**
+3. Enter: `rajkishormishra.com` → Click **Continue**
+4. Also add: `www.rajkishormishra.com` → Click **Continue**
 5. Cloudflare will show you the DNS records needed — **keep this tab open**
 
 ---
@@ -63,7 +63,7 @@ git push -u origin main
 This moves DNS control to Cloudflare while GoDaddy keeps the domain registration.
 
 #### 4A-1: Add your domain to Cloudflare
-1. In Cloudflare dashboard → **Add a Site** → enter `rajkishormishra.in`
+1. In Cloudflare dashboard → **Add a Site** → enter `rajkishormishra.com`
 2. Choose the **Free plan**
 3. Cloudflare will scan existing DNS records — click **Continue**
 4. Cloudflare gives you **2 nameservers**, e.g.:
@@ -73,14 +73,14 @@ This moves DNS control to Cloudflare while GoDaddy keeps the domain registration
 
 #### 4A-2: Update nameservers on GoDaddy
 1. Log in to https://account.godaddy.com/products
-2. Click **DNS** next to `rajkishormishra.in`
+2. Click **DNS** next to `rajkishormishra.com`
 3. Scroll to **Nameservers** → click **Change**
 4. Select **Enter my own nameservers**
 5. Replace both nameservers with the two Cloudflare ones above
 6. Save
 
 #### 4A-3: Add DNS records in Cloudflare
-Once the nameservers propagate (can take 10 min – 2 hrs), go to Cloudflare → **DNS** tab for `rajkishormishra.in` and add:
+Once the nameservers propagate (can take 10 min – 2 hrs), go to Cloudflare → **DNS** tab for `rajkishormishra.com` and add:
 
 | Type  | Name | Content                                      | Proxy |
 |-------|------|----------------------------------------------|-------|
@@ -95,7 +95,7 @@ Make sure the **orange cloud (proxy)** is ON for both — this enables CDN + SSL
 
 If you don't want to move nameservers, add these directly in GoDaddy's DNS settings:
 
-1. Log in to GoDaddy → **DNS** for `rajkishormishra.in`
+1. Log in to GoDaddy → **DNS** for `rajkishormishra.com`
 2. Delete any existing A or CNAME records for `@` and `www`
 3. Add:
 
@@ -121,13 +121,13 @@ No action needed from you — it's fully automatic.
 
 ## STEP 6 — Verify Everything
 
-Once DNS propagates (check at https://dnschecker.org — search `rajkishormishra.in`):
+Once DNS propagates (check at https://dnschecker.org — search `rajkishormishra.com`):
 
-✅ https://rajkishormishra.in — loads the site  
-✅ https://www.rajkishormishra.in — redirects correctly  
+✅ https://rajkishormishra.com — loads the site  
+✅ https://www.rajkishormishra.com — redirects correctly  
 ✅ SSL padlock visible in browser  
-✅ https://rajkishormishra.in/brochures/ostwal-imperial.pdf — PDF downloads  
-✅ https://rajkishormishra.in/images/rajkishor-mishra.jpeg — image loads  
+✅ https://rajkishormishra.com/brochures/ostwal-imperial.pdf — PDF downloads  
+✅ https://rajkishormishra.com/images/rajkishor-mishra.jpeg — image loads  
 
 ---
 
@@ -171,6 +171,6 @@ rajkishor_mishra_website/
 ---
 
 ## CONTACT
-- Email: sales@rajkishormishra.in
+- Email: sales@rajkishormishra.com
 - WhatsApp: +91 82628 85023
 - Address: Plot No. 13, Jay Gurudev Bunglow, Vajali Pada, Devisha Road, Palghar West — 401404
