@@ -126,7 +126,7 @@ Once DNS propagates (check at https://dnschecker.org — search `rajkishormishra
 ✅ https://rajkishormishra.com — loads the site  
 ✅ https://www.rajkishormishra.com — redirects correctly  
 ✅ SSL padlock visible in browser  
-✅ https://rajkishormishra.com/brochures/ostwal-imperial.pdf — PDF downloads  
+✅ https://rajkishormishra.com/disclaimer.html — legal page loads  
 ✅ https://rajkishormishra.com/images/rajkishor-mishra.jpeg — image loads  
 
 ---
@@ -151,6 +151,9 @@ Cloudflare Pages auto-redeploys in ~30 seconds. No manual steps needed.
 ```
 rajkishor_mishra_website/
 ├── index.html                         ← Full one-pager
+├── disclaimer.html                    ← Legal — Disclaimer
+├── privacy-policy.html                ← Legal — Privacy Policy
+├── terms.html                         ← Legal — Terms of Use
 ├── images/
 │   ├── rajkishor-mishra.jpeg          ← Founder portrait (nav + hero)
 │   ├── ostwal-imperial-hero.jpeg      ← Project full-bleed hero
@@ -161,8 +164,6 @@ rajkishor_mishra_website/
 │   ├── ostwal-elevation-day.jpeg      ← Gallery slide
 │   ├── ostwal-impression.jpeg         ← Gallery + sidebar
 │   └── omnr-logo.png                  ← Footer logo
-├── brochures/
-│   └── ostwal-imperial.pdf            ← Downloadable brochure
 ├── qr/
 │   └── ostwal-imperial-mrera-qr.png   ← MahaRERA QR
 └── DEPLOYMENT_GUIDE.md                ← This file
